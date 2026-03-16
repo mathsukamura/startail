@@ -1,0 +1,61 @@
+<div>
+  <h1 class="text-2xl font-bold text-foreground">Avatar</h1>
+  <p class="mt-2 text-sm text-muted-foreground">Representacao visual do usuario com imagem ou iniciais, em diferentes tamanhos e com indicadores de status.</p>
+
+
+  <div class="mt-8">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Preview</h2>
+    <div class="rounded-lg border border-border bg-card p-6 space-y-6">
+    
+      <div>
+        <p class="mb-3 text-xs font-medium text-muted-foreground">Tamanhos</p>
+        <div class="flex items-end gap-4">
+          <div class="flex size-8 items-center justify-center rounded-full bg-muted text-xs font-medium text-muted-foreground">SM</div>
+          <div class="flex size-10 items-center justify-center rounded-full bg-muted text-sm font-medium text-muted-foreground">MD</div>
+          <div class="flex size-12 items-center justify-center rounded-full bg-muted text-sm font-medium text-muted-foreground">LG</div>
+          <div class="flex size-16 items-center justify-center rounded-full bg-muted text-base font-medium text-muted-foreground">XL</div>
+        </div>
+      </div>
+
+    
+      <div>
+        <p class="mb-3 text-xs font-medium text-muted-foreground">Com indicador de status</p>
+        <div class="flex items-center gap-4">
+          <div class="relative">
+            <div class="flex size-10 items-center justify-center rounded-full bg-primary text-sm font-medium text-primary-foreground">AB</div>
+            <span class="absolute bottom-0 right-0 size-2.5 rounded-full border-2 border-card bg-emerald-500"></span>
+          </div>
+          <div class="relative">
+            <div class="flex size-10 items-center justify-center rounded-full bg-secondary text-sm font-medium text-secondary-foreground">CD</div>
+            <span class="absolute bottom-0 right-0 size-2.5 rounded-full border-2 border-card bg-amber-500"></span>
+          </div>
+          <div class="relative">
+            <div class="flex size-10 items-center justify-center rounded-full bg-muted text-sm font-medium text-muted-foreground">EF</div>
+            <span class="absolute bottom-0 right-0 size-2.5 rounded-full border-2 border-card bg-red-500"></span>
+          </div>
+          <div class="relative">
+            <div class="flex size-10 items-center justify-center rounded-full bg-accent text-sm font-medium text-accent-foreground">GH</div>
+            <span class="absolute bottom-0 right-0 size-2.5 rounded-full border-2 border-card bg-muted-foreground"></span>
+          </div>
+        </div>
+      </div>
+
+    
+      <div>
+        <p class="mb-3 text-xs font-medium text-muted-foreground">Grupo</p>
+        <div class="flex -space-x-2">
+          <div class="flex size-10 items-center justify-center rounded-full border-2 border-card bg-primary text-sm font-medium text-primary-foreground">A</div>
+          <div class="flex size-10 items-center justify-center rounded-full border-2 border-card bg-secondary text-sm font-medium text-secondary-foreground">B</div>
+          <div class="flex size-10 items-center justify-center rounded-full border-2 border-card bg-muted text-sm font-medium text-muted-foreground">C</div>
+          <div class="flex size-10 items-center justify-center rounded-full border-2 border-card bg-accent text-sm font-medium text-accent-foreground">+3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mt-6">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Codigo</h2>
+    <app-code-block [code]="exampleCode" language="html" />
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<div>
+  <h1 class="text-2xl font-bold text-foreground">Modal</h1>
+  <p class="mt-2 text-sm text-muted-foreground">Dialogo sobreposto para acoes que requerem atencao ou confirmacao do usuario.</p>
+
+
+  <div class="mt-8">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Preview</h2>
+    <div class="rounded-lg border border-border bg-card p-6">
+      <button
+        (click)="openModal()"
+        class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+      >
+        Abrir Modal
+      </button>
+
+      @if (isOpen) {
+      
+        <div class="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm" (click)="closeModal()">
+        
+          <div class="relative mx-4 w-full max-w-md rounded-lg border border-border bg-card shadow-lg" (click)="$event.stopPropagation()">
+          
+            <div class="flex items-center justify-between border-b border-border px-6 py-4">
+              <div>
+                <h3 class="text-sm font-semibold text-foreground">Confirmar acao</h3>
+                <p class="mt-1 text-xs text-muted-foreground">Esta acao nao pode ser desfeita.</p>
+              </div>
+              <button
+                (click)="closeModal()"
+                class="inline-flex size-7 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+            </div>
+          
+            <div class="px-6 py-4">
+              <p class="text-sm text-muted-foreground">Voce tem certeza que deseja continuar? Todos os dados associados serao permanentemente removidos do sistema.</p>
+            </div>
+          
+            <div class="flex items-center justify-end gap-2 border-t border-border px-6 py-3">
+              <button
+                (click)="closeModal()"
+                class="inline-flex items-center justify-center rounded-md border border-input bg-background px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-accent"
+              >
+                Cancelar
+              </button>
+              <button
+                (click)="closeModal()"
+                class="inline-flex items-center justify-center rounded-md bg-red-500 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-red-500/90"
+              >
+                Confirmar
+              </button>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+
+
+  <div class="mt-6">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Codigo</h2>
+    <app-code-block [code]="exampleCode" language="html" />
+  </div>
+</div>

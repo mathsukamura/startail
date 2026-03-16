@@ -1,0 +1,48 @@
+<div>
+  <h1 class="text-2xl font-bold text-foreground">Select</h1>
+  <p class="mt-2 text-sm text-muted-foreground">Menu suspenso para selecao de uma opcao entre multiplas alternativas.</p>
+
+
+  <div class="mt-8">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Preview</h2>
+    <div class="rounded-lg border border-border bg-card p-6 space-y-6">
+    
+      <div class="max-w-sm">
+        <label class="mb-1.5 block text-sm font-medium text-foreground">Pais</label>
+        <select class="flex h-9 w-full items-center rounded-md border border-input bg-background px-3 py-1 text-sm text-foreground shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+          <option value="" disabled selected>Selecione um pais</option>
+          <option value="br">Brasil</option>
+          <option value="us">Estados Unidos</option>
+          <option value="pt">Portugal</option>
+          <option value="jp">Japao</option>
+        </select>
+      </div>
+
+    
+      <div class="max-w-sm">
+        <label class="mb-1.5 block text-sm font-medium text-foreground">Cargo</label>
+        <select class="flex h-9 w-full items-center rounded-md border border-input bg-background px-3 py-1 text-sm text-foreground shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+          <option value="dev">Desenvolvedor</option>
+          <option value="designer">Designer</option>
+          <option value="pm">Product Manager</option>
+          <option value="qa">QA Engineer</option>
+        </select>
+        <p class="mt-1.5 text-xs text-muted-foreground">Escolha o cargo principal.</p>
+      </div>
+
+    
+      <div class="max-w-sm">
+        <label class="mb-1.5 block text-sm font-medium text-muted-foreground">Desabilitado</label>
+        <select disabled class="flex h-9 w-full items-center rounded-md border border-input bg-muted px-3 py-1 text-sm text-muted-foreground shadow-sm cursor-not-allowed opacity-50">
+          <option>Opcao fixa</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mt-6">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Codigo</h2>
+    <app-code-block [code]="exampleCode" language="html" />
+  </div>
+</div>

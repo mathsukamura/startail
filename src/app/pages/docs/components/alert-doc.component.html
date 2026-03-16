@@ -1,0 +1,52 @@
+<div>
+  <h1 class="text-2xl font-bold text-foreground">Alert</h1>
+  <p class="mt-2 text-sm text-muted-foreground">Exibe mensagens contextuais de feedback para o usuario com diferentes niveis de severidade.</p>
+
+
+  <div class="mt-8">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Preview</h2>
+    <div class="rounded-lg border border-border bg-card p-6 space-y-4">
+    
+      <div class="flex items-start gap-3 rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 shrink-0 text-emerald-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <div>
+          <p class="text-sm font-medium text-foreground">Sucesso</p>
+          <p class="mt-1 text-xs text-muted-foreground">Operacao realizada com sucesso.</p>
+        </div>
+      </div>
+
+    
+      <div class="flex items-start gap-3 rounded-lg border border-red-500/20 bg-red-500/5 p-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 shrink-0 text-red-500"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        <div>
+          <p class="text-sm font-medium text-foreground">Erro</p>
+          <p class="mt-1 text-xs text-muted-foreground">Ocorreu um erro ao processar a solicitacao.</p>
+        </div>
+      </div>
+
+    
+      <div class="flex items-start gap-3 rounded-lg border border-amber-500/20 bg-amber-500/5 p-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 shrink-0 text-amber-500"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <div>
+          <p class="text-sm font-medium text-foreground">Aviso</p>
+          <p class="mt-1 text-xs text-muted-foreground">Atencao: esta acao nao pode ser desfeita.</p>
+        </div>
+      </div>
+
+    
+      <div class="flex items-start gap-3 rounded-lg border border-blue-500/20 bg-blue-500/5 p-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 shrink-0 text-blue-500"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        <div>
+          <p class="text-sm font-medium text-foreground">Informacao</p>
+          <p class="mt-1 text-xs text-muted-foreground">Uma nova versao esta disponivel para atualizacao.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mt-6">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Codigo</h2>
+    <app-code-block [code]="exampleCode" language="html" />
+  </div>
+</div>

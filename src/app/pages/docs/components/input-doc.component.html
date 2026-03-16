@@ -1,0 +1,42 @@
+<div>
+  <h1 class="text-2xl font-bold text-foreground">Input</h1>
+  <p class="mt-2 text-sm text-muted-foreground">Campo de entrada de texto com suporte a diferentes estados e variantes.</p>
+
+
+  <div class="mt-8">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Preview</h2>
+    <div class="rounded-lg border border-border bg-card p-6 space-y-6">
+    
+      <div class="max-w-sm">
+        <label class="mb-1.5 block text-sm font-medium text-foreground">Nome</label>
+        <input type="text" placeholder="Digite seu nome" class="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm text-foreground shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+      </div>
+
+    
+      <div class="max-w-sm">
+        <label class="mb-1.5 block text-sm font-medium text-foreground">Email</label>
+        <input type="email" placeholder="email@exemplo.com" class="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm text-foreground shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+        <p class="mt-1.5 text-xs text-muted-foreground">Insira um email valido.</p>
+      </div>
+
+    
+      <div class="max-w-sm">
+        <label class="mb-1.5 block text-sm font-medium text-foreground">Senha</label>
+        <input type="password" value="123" class="flex h-9 w-full rounded-md border border-red-500 bg-background px-3 py-1 text-sm text-foreground shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-500" />
+        <p class="mt-1.5 text-xs text-red-500">A senha deve ter pelo menos 8 caracteres.</p>
+      </div>
+
+    
+      <div class="max-w-sm">
+        <label class="mb-1.5 block text-sm font-medium text-muted-foreground">Desabilitado</label>
+        <input type="text" placeholder="Campo desabilitado" disabled class="flex h-9 w-full rounded-md border border-input bg-muted px-3 py-1 text-sm text-muted-foreground shadow-sm cursor-not-allowed opacity-50" />
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mt-6">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Codigo</h2>
+    <app-code-block [code]="exampleCode" language="html" />
+  </div>
+</div>

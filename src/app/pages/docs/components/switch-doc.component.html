@@ -1,0 +1,98 @@
+<div>
+  <h1 class="text-2xl font-bold text-foreground">Switch</h1>
+  <p class="mt-2 text-sm text-muted-foreground">Controle de alternancia para ativar ou desativar opcoes de forma binaria.</p>
+
+
+  <div class="mt-8">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Preview</h2>
+    <div class="rounded-lg border border-border bg-card p-6 space-y-5">
+    
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-sm font-medium text-foreground">Modo aviao</p>
+          <p class="text-xs text-muted-foreground">Desativar todas as conexoes sem fio.</p>
+        </div>
+        <button
+          (click)="toggle('switch1')"
+          [class]="switch1
+            ? 'relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors'
+            : 'relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-input transition-colors'"
+          role="switch"
+          [attr.aria-checked]="switch1"
+        >
+          <span
+            [class]="switch1
+              ? 'pointer-events-none block size-4 rounded-full bg-background shadow-lg ring-0 transition-transform translate-x-4'
+              : 'pointer-events-none block size-4 rounded-full bg-background shadow-lg ring-0 transition-transform translate-x-0'"
+          ></span>
+        </button>
+      </div>
+
+    
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-sm font-medium text-foreground">Notificacoes</p>
+          <p class="text-xs text-muted-foreground">Receber notificacoes push.</p>
+        </div>
+        <button
+          (click)="toggle('switch2')"
+          [class]="switch2
+            ? 'relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors'
+            : 'relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-input transition-colors'"
+          role="switch"
+          [attr.aria-checked]="switch2"
+        >
+          <span
+            [class]="switch2
+              ? 'pointer-events-none block size-4 rounded-full bg-background shadow-lg ring-0 transition-transform translate-x-4'
+              : 'pointer-events-none block size-4 rounded-full bg-background shadow-lg ring-0 transition-transform translate-x-0'"
+          ></span>
+        </button>
+      </div>
+
+    
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-sm font-medium text-foreground">Tema escuro</p>
+          <p class="text-xs text-muted-foreground">Usar o tema escuro na interface.</p>
+        </div>
+        <button
+          (click)="toggle('switch3')"
+          [class]="switch3
+            ? 'relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors'
+            : 'relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-input transition-colors'"
+          role="switch"
+          [attr.aria-checked]="switch3"
+        >
+          <span
+            [class]="switch3
+              ? 'pointer-events-none block size-4 rounded-full bg-background shadow-lg ring-0 transition-transform translate-x-4'
+              : 'pointer-events-none block size-4 rounded-full bg-background shadow-lg ring-0 transition-transform translate-x-0'"
+          ></span>
+        </button>
+      </div>
+
+    
+      <div class="flex items-center justify-between opacity-50">
+        <div>
+          <p class="text-sm font-medium text-muted-foreground">Desabilitado</p>
+          <p class="text-xs text-muted-foreground">Esta opcao nao pode ser alterada.</p>
+        </div>
+        <button
+          disabled
+          class="relative inline-flex h-5 w-9 shrink-0 cursor-not-allowed rounded-full border-2 border-transparent bg-input transition-colors"
+          role="switch"
+          aria-checked="false"
+        >
+          <span class="pointer-events-none block size-4 rounded-full bg-background shadow-lg ring-0 transition-transform translate-x-0"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mt-6">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Codigo</h2>
+    <app-code-block [code]="exampleCode" language="html" />
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<div>
+  <h1 class="text-2xl font-bold text-foreground">Card</h1>
+  <p class="mt-2 text-sm text-muted-foreground">Container flexivel para agrupar conteudo relacionado com cabecalho, corpo e rodape opcionais.</p>
+
+
+  <div class="mt-8">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Preview</h2>
+    <div class="rounded-lg border border-border bg-card p-6 space-y-6">
+    
+      <div class="rounded-lg border border-border bg-card">
+        <div class="border-b border-border px-6 py-4">
+          <h3 class="text-sm font-semibold text-foreground">Titulo do Card</h3>
+          <p class="mt-1 text-xs text-muted-foreground">Descricao breve do conteudo deste card.</p>
+        </div>
+        <div class="px-6 py-4">
+          <p class="text-sm text-muted-foreground">Este e o conteudo principal do card. Pode conter texto, imagens, formularios ou qualquer outro elemento.</p>
+        </div>
+        <div class="flex items-center justify-end gap-2 border-t border-border px-6 py-3">
+          <button class="inline-flex items-center justify-center rounded-md border border-input bg-background px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-accent">Cancelar</button>
+          <button class="inline-flex items-center justify-center rounded-md bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90">Salvar</button>
+        </div>
+      </div>
+
+    
+      <div class="grid gap-4 sm:grid-cols-3">
+        <div class="rounded-lg border border-border bg-card p-5">
+          <p class="text-xs font-medium text-muted-foreground">Total de Usuarios</p>
+          <p class="mt-2 text-2xl font-bold text-foreground">2,834</p>
+          <p class="mt-1 text-xs text-emerald-500">+12.5% este mes</p>
+        </div>
+        <div class="rounded-lg border border-border bg-card p-5">
+          <p class="text-xs font-medium text-muted-foreground">Receita</p>
+          <p class="mt-2 text-2xl font-bold text-foreground">R$ 45.2k</p>
+          <p class="mt-1 text-xs text-emerald-500">+8.1% este mes</p>
+        </div>
+        <div class="rounded-lg border border-border bg-card p-5">
+          <p class="text-xs font-medium text-muted-foreground">Pedidos</p>
+          <p class="mt-2 text-2xl font-bold text-foreground">1,429</p>
+          <p class="mt-1 text-xs text-red-500">-3.2% este mes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mt-6">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Codigo</h2>
+    <app-code-block [code]="exampleCode" language="html" />
+  </div>
+</div>

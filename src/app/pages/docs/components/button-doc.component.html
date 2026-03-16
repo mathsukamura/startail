@@ -1,0 +1,46 @@
+<div>
+  <h1 class="text-2xl font-bold text-foreground">Button</h1>
+  <p class="mt-2 text-sm text-muted-foreground">Botoes para acoes e interacoes do usuario em diferentes variantes e tamanhos.</p>
+
+
+  <div class="mt-8">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Preview</h2>
+    <div class="rounded-lg border border-border bg-card p-6 space-y-6">
+    
+      <div>
+        <p class="mb-3 text-xs font-medium text-muted-foreground">Primary</p>
+        <div class="flex flex-wrap items-center gap-3">
+          <button class="inline-flex items-center justify-center rounded-md bg-primary px-3 py-1 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90">Small</button>
+          <button class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90">Default</button>
+          <button class="inline-flex items-center justify-center rounded-md bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90">Large</button>
+        </div>
+      </div>
+
+    
+      <div>
+        <p class="mb-3 text-xs font-medium text-muted-foreground">Outline</p>
+        <div class="flex flex-wrap items-center gap-3">
+          <button class="inline-flex items-center justify-center rounded-md border border-input bg-background px-3 py-1 text-xs font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground">Small</button>
+          <button class="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground">Default</button>
+          <button class="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground">Large</button>
+        </div>
+      </div>
+
+    
+      <div>
+        <p class="mb-3 text-xs font-medium text-muted-foreground">Secondary</p>
+        <div class="flex flex-wrap items-center gap-3">
+          <button class="inline-flex items-center justify-center rounded-md bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/80">Secondary</button>
+          <button class="inline-flex items-center justify-center rounded-md bg-red-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-red-500/90">Destructive</button>
+          <button class="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-foreground underline-offset-4 hover:underline">Link</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mt-6">
+    <h2 class="text-sm font-medium text-muted-foreground mb-3">Codigo</h2>
+    <app-code-block [code]="exampleCode" language="html" />
+  </div>
+</div>
